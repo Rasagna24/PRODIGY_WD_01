@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary Planner</title>
+    <link rel="stylesheet" href="task1.css">
+    <style>
+        /* Additional styles can be added here if needed */
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="menu-item" data-target="home">Home</li>
+            <li class="menu-item" data-target="itinerary">Itinerary</li>
+            <li class="menu-item" data-target="destination">Destination</li>
+            <li class="menu-item" data-target="budget">Budget Tracker</li>
+            <li class="menu-item" data-target="profile">Profile</li>
+            <li class="menu-item" data-target="about">About</li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to the Travel Itinerary Planner</h1>
+            <div id="recent-destinations">
+                <h2>Recent Destinations</h2>
+                <ul id="recent-destinations-list">
+                    <!-- Recent destinations will be populated dynamically -->
+                </ul>
+            </div>
+            <div id="search-featured">
+                <input type="text" id="search-bar-home" placeholder="Search for a destination...">
+                <button id="search-home-btn">Search</button>
+            </div>
+            <div id="featured-itineraries">
+                <!-- Featured itineraries will be populated dynamically -->
+            </div>
+            <div id="upcoming-itineraries-home">
+                <h2>Upcoming Itineraries</h2>
+                <ul id="upcoming-itineraries-list-home">
+                    <!-- Upcoming itineraries will be populated dynamically -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Itinerary Section -->
+        <section id="itinerary">
+            <h2>Itinerary</h2>
+            <div id="create-itinerary">
+                <button id="create-itinerary-btn">+ Create Itinerary</button>
+                <div id="create-itinerary-form" style="display: none;">
+                    <input type="text" id="itinerary-name" placeholder="Itinerary Name">
+                    <input type="text" id="itinerary-destination" placeholder="Destination">
+                    <input type="date" id="itinerary-dates-from">
+                    <input type="date" id="itinerary-dates-to">
+                    <textarea id="itinerary-activities" placeholder="Activities (separate by +)"></textarea>
+                    <textarea id="itinerary-budget" placeholder="Budget for each activity (separate by +)"></textarea>
+                    <button id="submit-itinerary-btn">Create</button>
+                    <button id="delete-itinerary-btn" style="display: none;">Delete</button>
+                </div>
+            </div>
+            <div id="ongoing-itineraries">
+                <h3>Ongoing Itineraries</h3>
+                <ul id="ongoing-itineraries-list">
+                    <!-- Ongoing itineraries will be populated dynamically -->
+                </ul>
+            </div>
+            <div id="upcoming-itineraries">
+                <h3>Upcoming Itineraries</h3>
+                <ul id="upcoming-itineraries-list">
+                    <!-- Upcoming itineraries will be populated dynamically -->
+                </ul>
+            </div>
+            <div id="past-itineraries">
+                <h3>Past Itineraries</h3>
+                <ul id="past-itineraries-list">
+                    <!-- Past itineraries will be populated dynamically -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Destination Section -->
+        <section id="destination">
+            <h2>Destination</h2>
+            <div id="search-destination">
+                <input type="text" id="search-bar-destination" placeholder="Search for a destination...">
+                <button id="search-destination-btn">Search</button>
+            </div>
+            <div id="destination-results">
+                <!-- Destination results will be populated dynamically -->
+            </div>
+        </section>
+
+        <!-- Budget Tracker Section -->
+        <section id="budget">
+            <h2>Budget Tracker</h2>
+            <ul id="expenses-list">
+                <!-- Expenses list will be populated dynamically -->
+            </ul>
+            <div id="budget-summary">
+                <!-- Budget summary will be populated dynamically -->
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>Profile</h2>
+            <div id="user-profile">
+                <img src="profile photo.jpeg" alt="Profile Picture">
+                <p>Name: Parvathini Rasagna</p>
+            </div>
+            <div id="contact-info">
+                <h3>Contact Information</h3>
+                <form id="contact-form">
+                    <input type="text" id="user name" placeholder="User Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="tel" id="phone" placeholder="Phone" required>
+                    <input type="text" id="facebook" placeholder="Facebook">
+                    <input type="text" id="twitter" placeholder="Twitter">
+                    <input type="text" id="whatsapp" placeholder="WhatsApp">
+                    <input type="text" id="instagram" placeholder="Instagram">
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </section>
+        <!-- About Section -->
+         <section id="about">
+            <h2>About Travel Itinerary Planner</h2>
+            <p>Welcome to Travel Itinerary Planner, your go-to platform for crafting personalized travel plans and exploring new destinations with ease. Whether you're a globetrotter, a family on vacation, or a solo adventurer, our mission is to simplify the process of planning and organizing your travels.</p>
+            <p>At Travel Itinerary Planner, we believe that every journey should be memorable and tailored to your unique preferences. Our platform offers a user-friendly interface where you can discover curated itineraries for various destinations around the world. From bustling cities to serene landscapes, cultural landmarks to off-the-beaten-path adventures, our diverse range of itineraries caters to all types of travelers.</p>
+            <p>Our team of experienced travelers and travel experts meticulously research and design each itinerary to ensure you have access to the best sights, activities, and dining options at your chosen destination. Whether you're planning a weekend getaway or a month-long expedition, Travel Itinerary Planner provides comprehensive guides that include practical tips, local insights, and recommendations to help you make the most of your trip.</p>
+            <p>Start your journey with Travel Itinerary Planner today and unlock a world of possibilities. Let us guide you as you create unforgettable travel experiences and embark on new adventures around the globe.</p>
+        </section>
+    </main>
+    <script src="task1.js"></script>
+    <script>
+        // JavaScript logic from your original script.js file
+        // Place it here if you prefer to have all scripts in one file
+    </script>
+</body>
+</html>
+
